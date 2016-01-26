@@ -96,5 +96,80 @@ select {
 }
 /*done with the first bar*/
 
+#menu {
+    margin-top:20px;
+    float:left;
+    width:100%;
+    font-family:Gotham Medium;
+    font-size:12px;
+}
+
+#menu ul{
+    margin:0px;
+    padding:0px;
+    float:left;
+    background-color:#f2f1f2;
+    height:30px;
+}
+
+#menu li{
+    list-style:none;
+    float:left;
+    padding: 0.65em 33px 0.65em 33px;
+}
+
+
+#menutwo {
+    margin-top:20px;
+    float:left;
+    width:100%;
+    font-family:Gotham Medium;
+    font-size:12px;
+}
+
+#menutwo ul{
+    margin:0px;
+    padding:0px;
+    float:left;
+    background-color:#ffffff;
+    height:33px;
+}
+
+#menutwo li{
+    list-style:none;
+    float:left;
+    padding: 0.775em 66px 0.775em 66px;
+}
+
+
+
+.current{
+    background-color:#007cc0;
+    color:#ffffff;
+}
+.currentstep{
+    background-color:#007cc0;
+    color:#ffffff;
+    background-image:url("../images/resStepDivider.gif");
+    background-repeat: no-repeat;
+    background-position: left center;
+
+}
+.nextstep{
+    background-image:url("../images/resStepDividerActive.gif");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.passed{
+    background-color:#e2f0f5;
+    color:#007cc0;
+}
+
+
+
+
+
+
 
 
