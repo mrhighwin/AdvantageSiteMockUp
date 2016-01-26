@@ -1,0 +1,272 @@
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: Verdana; 
+    font-size: 15px;
+}
+div{
+    margin:0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+#topbar {
+    background-color: #7B0907;
+    width: 100%;
+    height: 46px;
+    color: white;
+}
+.fixedwidth{
+    width:1070px;
+    margin: 0px auto;
+}
+#logodiv{
+    padding-top: 10px;
+    float: left;
+    border-right: 1px #960D09 solid;
+    padding-right: 10px;
+}
+#signin{
+    border-right: 1px #960D09 solid;    
+    float:left;     
+    padding-top: 14px;
+    padding-left:20px;
+    padding-right: 70px;
+    padding-bottom: 12px;
+}
+#signin img{
+    padding:0px;
+    margin:0px;
+    margin-right: 10px;
+
+}
+
+#topmenudiv{
+    float: left;
+}
+#topmenudiv ul{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+#topmenudiv li{
+    list-style: none;
+    padding: 14px 20px 13px 20px;
+    border-right: 1px #960D09 solid;      
+    float: left;  
+}
+#secondmenu{
+    padding-left: 5px;
+    font-size: 13px;
+    float: left;
+}
+#secondmenu ul{
+    margin: 0px;
+    padding: 0px;
+    float: left;           
+}
+#secondmenu li{
+    list-style: none;
+    margin:6px 0px 0px 5px;
+    padding-right: 7px;
+    border-right: 1px #960D09 solid;      
+    float: left;  
+}
+#thirdbar{
+    background-color: #42080D;
+    width: 100%;
+    height: 30px;
+    color: white;
+}
+
+#searchdiv{
+    float: left;
+    padding: 10px;
+    padding-left:  8px;
+}
+
+#searchdiv input{
+    height: 20px;
+    font-size: 14px;
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url("images/magnify.png");
+    float: left;
+}
+#secondbar{
+    background-color: #960D09;
+    width: 100%;
+    height: 100px;
+    color: white;
+
+}
+.clear{
+    clear: both;
+}
+.catgory{
+    float: left;
+    font-size: 50px;
+    padding:10px 0 0 10px;
+}
+.country{
+    float: left;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+#rssfeed{
+    float: right;
+    margin-top: 50px;
+}
+.clear {
+    clear:both;
+}
+#uk {
+    position: relative;
+    top:-6px;
+    height: 24px;
+    padding-left: 5px;
+    padding-top: 6px;
+    margin-left: -1px !important;
+    background-color: white;
+    color:black;
+}
+
+#main{
+    float: left;
+    width: 64%;
+    height: 500px;
+}
+
+#main p{
+    padding: 0;
+    margin-top: 5px;
+    font-size: 13px;
+}
+#main span{
+    font-weight: bold;
+}
+
+.toptitle{
+    font-size: 30px !important;
+    color: #2A5D89;
+    font-weight: bold;
+    padding:0;
+    margin:0;
+}
+.topgraph{
+    margin-top: 15px;
+    float: left;
+}
+.topgraph img{
+    width:400px;
+    float: left;
+    margin-bottom: 10px;
+}
+.intro{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 260px;
+    float: left;
+    font-size: 13px;
+}
+
+.intro ul{
+    margin: 0;
+    padding:0;
+    color: #7D9AB4;
+}
+.intro li{
+    list-style: none;
+    background-image: url("images/list.png");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: left center;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+#nolist{
+    background-image: none;
+    padding-left: 0;
+}
+#sidebar{
+    width: 35%;
+    height: 500px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#sideone{
+    width: 320px;
+    height: 250px;
+    background-color:  #F1F1F1;
+
+}
+#sidetwo{
+    width: 320px;
+    height: 200px;
+    background-color:  #F1F1F1;
+    margin-top: 20px;
+}
+#sidebar h2{
+    color: #717171;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 5px 0 0 5px;
+}
+.leftarrow{
+    height: 140px;
+    width: 20px;
+    padding:0;
+    float: left;
+}
+.rightarrow{            
+    height: 140px;
+    width: 20px;
+    padding:0;
+    float: right;
+
+}
+.wl{
+    float:left;
+    padding: 0;
+    margin:0;
+}
+.wl p{
+    background-color: #CF782C;
+    padding:5px 0 5px 5px;
+    margin: 0;
+    width: 135px;
+    height: 50px;
+    position: relative;
+    top:-2px;        }
+    .wl img{
+        width: 140px;
+        padding: 0;
+        margin:0;
+    }
+
+    #newslist{
+        list-style-type: none;
+        padding: 0;
+        margin-left: 10px;
+
+    }
+
+    #newslist li{
+        padding-left: 70px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-image: url("images/live.png");
+        margin-top:5px;
+    }
