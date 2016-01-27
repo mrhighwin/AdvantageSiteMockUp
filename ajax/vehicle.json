@@ -1,0 +1,14 @@
+	{
+		carId: 1,
+		carPrice : 35.00,
+		carRate : 'USD/DAY',
+		smallImage : 'car1.gif',
+		largeImage : 'images/vehicles/ADUSECAR999.jpg',
+		carSize : 'Extra Small Car',
+		type : 'Economy',
+		passengers : 4,
+		smallSuitcase : 2,
+		largeSuitcase : 0,
+		fees : 6.99,
+		carFeatures: ['Automatic Transmission', 'Air Conditioning', '24 miles/gallon']
+	}

@@ -4,16 +4,16 @@
     padding: 0px;
     font-family: Arial;
     font-size:12px;
-    /*background-color: #007cc0;*/
+    /*background-color: red;*/
 }
-
+/*
 #topbar{
     width:100%;
-}
+}*/
 
 #logo{
     margin-left:20px;
-    margin-right:260px;
+    margin-right:240px;
     margin-top:20px;
     margin-down:20px;
     float:left;
@@ -96,35 +96,140 @@ select {
 }
 /*done with the first bar*/
 
+/*Car section Style*/
+
+#car ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    background-color:#f2f1f2;
+    margin-top:5px;
+    margin-left:8px;
+}
+
+.carimage img{
+    height:70px;
+}
+.white{
+}
+
+#car ul li{
+    display:inline-block;
+    position:relative;
+    height:96px;
+}
+
+#car ul .white li{
+    background-color:#ffffff;
+}
+
+#car ul li ul li{
+    padding:0 20px 0 6px;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.carsize{
+    text-align:center;
+    margin:0px;
+}
+
+.fees div{
+    position:relative;
+}
+
+.fees p{
+    margin-bottom:0px;
+    margin-top:5px;
+    text-align:center;
+}
+
+.capacity div{
+    position:relative;
+
+}
+.features div{
+    position:relative;
+
+}
+
+
+/*Top Menu*/
+
 #menu {
+    width:940px;
     margin-top:20px;
     float:left;
-    width:100%;
     font-family:Gotham Medium;
     font-size:12px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color:#f2f1f2;
 }
 
 #menu ul{
     margin:0px;
     padding:0px;
-    float:left;
+    list-style:none;
     background-color:#f2f1f2;
-    height:30px;
 }
 
 #menu li{
-    list-style:none;
-    float:left;
-    padding: 0.65em 33px 0.65em 33px;
+    display:inline-block;
+    position:relative;
+    line-height:22px;
+    padding:8px 33px 8px 33px;
 }
+
+#menu a{
+    text-decoration:none;
+}
+
+#menu a:hover{
+    text-decoration:none;
+    color:#ffffff;
+}
+
+#menu li:hover{
+    background:#007cc0;
+    color:#ffffff;
+
+}
+
+#menu ul li ul.dropdown{
+    min-width: 125px; /* Set width of the dropdown */
+    background: #007cc0 ;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+#menu ul li:hover ul{
+    display:block;
+}
+
+
+
+
+
+
+#contactus {
+    padding:0;
+    margin-top:0;
+}
+
 
 
 #menutwo {
     margin-top:20px;
     float:left;
-    width:100%;
+    width:940px;
     font-family:Gotham Medium;
     font-size:12px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color:#ffffff;
 }
 
 #menutwo ul{
@@ -141,12 +246,6 @@ select {
     padding: 0.775em 66px 0.775em 66px;
 }
 
-
-
-.current{
-    background-color:#007cc0;
-    color:#ffffff;
-}
 .currentstep{
     background-color:#007cc0;
     color:#ffffff;
@@ -167,9 +266,139 @@ select {
 }
 
 
+/*main content*/
+#maincontent{
+    width:960px;
+    margin:20px px 0px 0px;
+    background-image:url(../images/bg-grad.gif);
+    background-repeat:repeat;
+    background-size:100% 100%;
+}
+
+#car{
+    width:570px;
+    float:left;
+}
+
+#rightcontent{
+    float:left;
+    width:368px;
+}
+#schedule{
+    float:left;
+    height:292px;
+    width:368px;
+    background-color:#e2f0f5;
+    margin:0 0 2px 2px;
+}
+
+#ad{
+    float:left;
+    height:292px;
+    width:368px;
+    margin:0 0 0 2px;
+}
+
+.subtitle{
+    font-weight: bold;
+    margin:0;
+}
+
+.description{
+    margin-top:0;
+}
+
+#schedulecontent{
+    margin-left:15px;
+}
+
+#changei{
+    float:right;
+    margin:10px;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:blue;
+}
 
 
+#footer{
+    width:940px;
+    margin-top:50px;
+    margin-left: 10px;
+    margin-right:10px;
+    background-color:#e2f0f5;
+}
 
+#footercontent{
+    margin:15px;
+}
 
+#socialmedia{
+    float:left;
+}
+
+#information{
+    float:left;
+}
+
+#email{
+    height:16px;
+}
+
+#submitimage{
+    margin-left: 20px;
+    position:relative;
+    top:6px;
+    height:20px;
+}
+
+.socialicon{
+    margin-right:10px;
+}
+
+#phone{
+    position:relative;
+    bottom:10px;
+}
+
+.removeleftmargin{
+    margin-left:0px;
+}
+
+#information ul{
+    padding:0;
+    float: left;
+    color:#007cc0;
+}
+
+#information li{
+    list-style:none;
+    margin:10px 0 10px 0;
+}
+
+.block{
+    list-style:none;
+    padding: 14px 20px 13px 20px;
+    border-left: 1px #ffffff solid;      
+    float: left;  
+}
+
+#expand{
+}
+
+.highlight{
+    font-weight:bold;
+}
+#copyright{
+    width:940px;
+    margin-left:10px;
+    margin-right:10px;
+    text-align:center;
+}
 
 
