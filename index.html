@@ -1,95 +1,50 @@
 <!doctype html>
 <html>
-<head>
-    <title>Haiwen's Advantage Rent a Car</title>
 
+<head>
+    <title>Mock up to HTML/CSS practice</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="_layout/style.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
-    <script type="text/javascript">
-        $.getScript("ajax/vehicle_data.json", function(){
-         console.log("Script loaded but not necessarily executed.");
-         console.log(carInfo);
-         var length = carInfo.length;
-         var html = "";
-         for(var i = 0; i < length; i++){
-            if(i%2 === 0)
-                html  = '<li class = "carlistrow white">';
-            else
-                html  = '<li class = "carlistrow">';
-            html += '<ul class = "carlistrowcolumns">';           
-            html += ' <li class = "fees">';
-            html += '<div>';
-            html += '<p>' + carInfo[i]['fees'] + '</p>';
-            html += '<p>' + carInfo[i]['carRate'] + '</p>';
-            html += '<p><img src="images/select_gr_btn.gif" alt=""></p>';
-            html += '<p>Total ' + carInfo[i]['carPrice'] + ' USD</p>';
-            html += '</div>';
-            html += '</li>';
-            html += '<li class = "carimage">';
-            html += '<img src="images/vehicles/car' + (i+1) + '.gif" alt="car1">';
-            html += '<p class = "carsize">' + carInfo[i]['carSize'] + '</p>';
-            html += '</li>';
-            html += '<li class = "capacity">';
-            html += '<div>';
-            html += '<img src="images/icon_man.gif" alt="man"> x ' + carInfo[i]['passengers'] + ' Passengers<br>';
-            html += ' <img src="images/icon_sm_scase.gif" alt="man"> x ' + carInfo[i]['smallSuitcase'] + ' Small Suitcases<br>';
-            html += '<img src="images/icon_lg_scase.gif" alt="man"> x ' + carInfo[i]['largeSuitcase'] + ' Large Suitcase<br>';
-            html += '</div>';
-            html += '</li>';
-            html += '<li class = "features">';
-            html += '<div id = "features">';
-            var features = carInfo[i]['carFeatures'];
-            for(var j = 0; j < features.length; j++){
-                html += features[j] + '<br>';
-            }
-            html += '</div>';
-            html += '</li>';
-            html += '</ul>';
-            html += '</li>';
-            document.getElementById('carmainlist').innerHTML += html;
-        };
-    });</script>
 </head>
 
 <body>
-    <div id = "container">
-        <div id = "topbar">
-            <div id = "logo">
-                <img id = "mainlogo" src="images/adv_logo_hd.gif" alt="adv logo">
-                <div class = "clear"></div>
-                <img id = "sidelogo" src="images/rentacar.png" alt="rentacar">
+    <div id="container">
+        <div id="topbar">
+            <div id="logo">
+                <img id="mainlogo" src="images/adv_logo_hd.gif" alt="adv logo">
+                <div class="clear"></div>
+                <img id="sidelogo" src="images/rentacar.png" alt="rentacar">
             </div>
-            <div id = "selectSearch">
-                <div id = "country">
+            <div id="selectSearch">
+                <div id="country">
                     <select>
                         <option value="us">United States</option>
                         <option value="china">China</option>
                         <option value="india">India</option>
                     </select>
                 </div>
-                <div id = "language">
+                <div id="language">
                     <select>
                         <option value="english">English</option>
                         <option value="chinese">Chinese</option>
                         <option value="hindi">Hindi</option>
                     </select>
                 </div>
-                <div id = "search">
+                <div id="search">
                     <form id="tfnewsearch" method="get" action="http://www.google.com">
-                        <input id = "searchbar" type="text" name="search" placeholder="Search">
-                        <input id = "searchimage" type="image" src="images/search_btn.gif">
+                        <input id="searchbar" type="text" name="search" placeholder="Search">
+                        <input id="searchimage" type="image" src="images/search_btn.gif">
                     </form>
                 </div>
             </div>
-            <div class = "clear"></div>
-        </div> 
-
-        <div id = "menu">
+            <div class="clear"></div>
+        </div>
+        <div id="menu">
             <ul>
                 <li>RATES & RESERVATIONS</li>
                 <li>A-PASS ONLINE CHECK-IN</li>
@@ -97,106 +52,98 @@
                 <li>DEALS AND OFFERS</li>
                 <li>
                     <a href="">CONTACT US</a>
-                    <ul class = "dropdown">
+                    <ul class="dropdown">
                         <li>PHS NODFUE</li>
                         <li>MSDFHI</li>
                     </ul>
                 </li>
-                
             </ul>
         </div>
-
-        <div class = "clear"></div>
-        <div id = "menutwo">
+        <div class="clear"></div>
+        <div id="menutwo">
             <ul>
-                <li class ="passed">STEP 1</li>
-                <li class = "currentstep">SELECT VEHICLES AND EXTRAS</li>
-                <li class = "nextstep">STEP 3</li>
+                <li class="passed">STEP 1</li>
+                <li class="currentstep">SELECT VEHICLES AND EXTRAS</li>
+                <li class="nextstep">STEP 3</li>
                 <li>STEP 4</li>
             </ul>
         </div>
-        <div class = "clear"></div>
-
-        <div id = "maincontent">
-            <div id = "car">
-                <ul id = "carmainlist">
+        <div class="clear"></div>
+        <div id="maincontent">
+            <div id="car">
+                <ul id="carmainlist">
                 </ul>
             </div>
-            <div id = "rightcontent">
-                <div id = "schedule">
-                    <div id = "schedulecontent">
-                        <div id = "changei"><a href="http://www.google.com">Change Itinerary</a></div>
+            <div id="rightcontent">
+                <div id="schedule">
+                    <div id="schedulecontent">
+                        <div id="changei"><a href="http://www.google.com">Change Itinerary</a></div>
                         <h1>YOUR ITINERARY</h1>
-                        <p class ="subtitle">Pick up</p>
-                        <p class ="description">Ft. Lauderdale Airport(FLL) FL, US<br>
-                            600 Terminal Drive
-                            Dania(Ft. Lauderdale), FL, US 33004
+                        <p class="subtitle">Pick up</p>
+                        <p class="description">Ft. Lauderdale Airport(FLL) FL, US
+                            <br> 600 Terminal Drive Dania(Ft. Lauderdale), FL, US 33004
                         </p>
-                        <p class ="subtitle">Return</p>
-                        <p class ="description">Ft. Myer Airport-Town Center Holiday Inn(RSW)<br>
-                            FL, US<br>
-                            9931 Interstate Commerce Drive<br>
-                            Fort Myers, FL, US 33913
+                        <p class="subtitle">Return</p>
+                        <p class="description">Ft. Myer Airport-Town Center Holiday Inn(RSW)
+                            <br> FL, US
+                            <br> 9931 Interstate Commerce Drive
+                            <br> Fort Myers, FL, US 33913
                         </p>
-                        <p class ="subtitle">Pick Up Date</p>
-                        <p class ="description">Wed, Feb 16 2011 at 10:00 AM</p>
-                        <p class ="subtitle">Return Date</p>
-                        <p class ="description">Wed, Feb 23, 2011 at 10:00 AM</p>
+                        <p class="subtitle">Pick Up Date</p>
+                        <p class="description">Wed, Feb 16 2011 at 10:00 AM</p>
+                        <p class="subtitle">Return Date</p>
+                        <p class="description">Wed, Feb 23, 2011 at 10:00 AM</p>
                     </div>
-
                 </div>
-                <div class = "clear"></div>                
-                <div id = "ad">
+                <div class="clear"></div>
+                <div id="ad">
                     <img src="images/offer.gif" alt="offer">
                 </div>
             </div>
-            <div class = "clear"></div>
-
-            <div id = "footer">
-                <div id = "footercontent">
-                    <div id = "socialmedia">
+            <div class="clear"></div>
+            <div id="footer">
+                <div id="footercontent">
+                    <div id="socialmedia">
                         <h1>Stay Connected</h1>
-
-                        <form  method="get" action="http://www.google.com">
-                            <input id = "email" type="text" name="email" placeholder="Sign up for emails">
-                            <input id = "submitimage" type="image" src="images/submit.png">
+                        <form method="get" action="http://www.google.com">
+                            <input id="email" type="text" name="email" placeholder="Sign up for emails">
+                            <input id="submitimage" type="image" src="images/submit.png">
                         </form>
-                        <p class= "removeleftmargin">
-                            <img class ="socialicon" src="images/facebook.png" alt="facebook">
-                            <img class ="socialicon" src="images/facebook.png" alt="facebook">
-                            <img class ="socialicon" src="images/twitter.png" alt="twitter">
-                            <img class ="socialicon" src="images/youtube.png" alt="youtube">
+                        <p class="removeleftmargin">
+                            <img class="socialicon" src="images/facebook.png" alt="facebook">
+                            <img class="socialicon" src="images/facebook.png" alt="facebook">
+                            <img class="socialicon" src="images/twitter.png" alt="twitter">
+                            <img class="socialicon" src="images/youtube.png" alt="youtube">
                         </p>
-                        <p class= "removeleftmargin">
-                            <img class ="socialicon" src="images/phoneIcon.png" alt="phoneicon">
-                            <a id = "phone" href="http://www.google.com">Advantage Rent A Car Mobile</a>
+                        <p class="removeleftmargin">
+                            <img class="socialicon" src="images/phoneIcon.png" alt="phoneicon">
+                            <a id="phone" href="http://www.google.com">Advantage Rent A Car Mobile</a>
                         </p>
-
                     </div>
-                    <div id = "information">
+                    <div id="information">
                         <ul>
-                            <li class = "block">
-                                <ul class = "expanded">
-                                    <li class = "highlight">Rates & Reservations</li>
+                            <li class="block">
+                                <ul class="expanded">
+                                    <li class="highlight">Rates & Reservations</li>
                                     <li>Get a Quote</li>
                                     <li>Modify / Cancel</li>
                                     <li>Review</li>
-                                    <li  class = "highlight">A-PASS Online Check In</li>
-                                    <li class = "highlight">Find A Location</li>
+                                    <li class="highlight">A-PASS Online Check In</li>
+                                    <li class="highlight">Find A Location</li>
                                 </ul>
                             </li>
-                            <li class = "block">
-                                <ul class = "expanded">
-                                    <li class = "highlight">Dealers & Offers</li>
-                                    <li class = "highlight">Contact Us</li>
-                                    <li class = "highlight">Customer Support</li>
+                            <li class="block">
+                                <ul class="expanded">
+                                    <li class="highlight">Dealers & Offers</li>
+                                    <li class="highlight">Contact Us</li>
+                                    <li class="highlight">Customer Support</li>
                                     <li>FAQs</li>
                                     <li>Request a Receipt</li>
                                     <li>Rental Qualifications/Requirements</li>
                                 </ul>
                             </li>
-                            <li class = "block">
-                                <ul class = "expanded">
+                            <li class="block">
+                                <ul class="expanded">
                                     <li>Careers</li>
                                     <li>Privacy Policy</li>
                                     <li>Travel Agent Login</li>
@@ -207,14 +154,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class = "clear"></div>
-                    <div id = "copyright">All rights reserved</div>
-
+                    <div class="clear"></div>
+                    <div id="copyright">All rights reserved</div>
                 </div>
             </div>
-
         </div>
         <!-- end of right main content -->
+        <script src='./javascript/vehicle_populate.js'></script>
+</body>
 
-    </body>
-    </html>
+</html>
