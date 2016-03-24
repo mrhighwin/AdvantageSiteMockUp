@@ -1,0 +1,22 @@
+{
+  "name": "advantagemockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ws & open 'http://localhost:8000'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrhighwin/Advantage-Mock-Up.git"
+  },
+  "author": "Haiwen Chen <haiwen.chen311@gmail.com> (http://www.haiwenchen.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrhighwin/Advantage-Mock-Up/issues"
+  },
+  "homepage": "https://github.com/mrhighwin/Advantage-Mock-Up#readme",
+  "devDependencies": {
+    "local-web-server": "^1.2.1"
+  }
+}
