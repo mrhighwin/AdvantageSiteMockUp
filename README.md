@@ -10,4 +10,4 @@ Instruction to run:
 
 1. Clone the repo
 2. `npm install`
-3. `ws` in your command
+3. `npm run test`
